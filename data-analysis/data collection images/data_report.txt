@@ -1,0 +1,39 @@
+Step 1 – Understanding the Task
+The objective of this task was to perform data analysis on an air quality dataset containing daily pollution measurements such as PM2.5, PM10, NO₂, SO₂, CO, Ozone, and AQI values. The dataset also had temporal features (Date, Month, Year, Days) and holiday information. The main goal was to clean, analyze, and visualize this data to understand trends and patterns.
+
+Step 2 – Setting up the Project
+Created a project folder named data-analysis inside the DAY 5 directory. Opened PowerShell in the project folder location. Created a virtual environment named data-analysis using:
+python -m venv data-analysis
+Activated the virtual environment:
+.\data-analysis\Scripts\activate
+
+Step 3 – Installing Required Libraries
+Installed the necessary Python libraries:
+pip install pandas matplotlib seaborn
+
+Step 4 – Preparing the Dataset
+Downloaded the air quality dataset (air_quality.csv) and placed it inside the project folder.
+The dataset contained:
+Pollutants: PM2.5, PM10, NO₂, SO₂, CO, Ozone
+Time Data: Date, Month, Year, Days (as numeric representation)
+Holiday Data: 1 = Holiday, 0 = Working day
+Target Variable: AQI (Air Quality Index)
+
+Step 5 – Writing the Analysis Script (analysis.py)
+Loaded the dataset using Pandas.
+Displayed the first 5 rows to verify correct loading.
+Checked dataset information (df.info()), missing values, and summary statistics.
+Created visualizations to show trends and distributions:
+
+Line Plot – AQI over time.
+
+Box Plots – Distribution of AQI per month.
+
+Heatmap – Correlation between pollutants and AQI.
+Saved all plots as PNG files in the project folder instead of showing them (to avoid Tkinter errors).
+
+Step 6 – Running the Analysis
+Ran the script using:
+python analysis.py
+Verified that the script executed successfully and saved plots in PNG format.
+Confirmed the analysis output in the terminal, showing dataset details, missing values report, and summary statistics.
